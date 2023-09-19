@@ -18,10 +18,13 @@ const userSchema = new mongoose.Schema({
       `Please enter a valid email address`,
     ],
   },
+  thought: {
+    type: mongoose.Schema.Types.ObjectId, ref: 'Thoughts',
+},
+friend:
+    { type: mongoose.Schema.Types.ObjectId, ref: 'Friend' }
 
-// TO DO
-//add 'add friends'
-//add throughts
+
 
 });
 
